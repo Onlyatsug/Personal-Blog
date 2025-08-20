@@ -1,0 +1,45 @@
+# deploy.yml
+
+name: Deploy to GitHub Pages
+
+# Roda este workflow toda vez que um push é feito na branch 'main'
+on:
+  push:
+    branches: [ main ]
+  # Permite que você rode este workflow manualmente pela aba Actions do GitHub
+  workflow_dispatch:
+
+# Permite que o workflow clone o repositório e crie um deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use uma versão LTS do Node.js
+          cache: 'npm'
+
+      - name: Install dependencies 📦
+        run: npm install
+
+      - name: Build 🔨
+        # Roda o script de build do Vite. O 'base' que configuramos será usado aqui.
+        run: npm run build
+
+      - name: Upload artifact ⬆️
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # O Vite gera a pasta 'dist' por padrão
+
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
