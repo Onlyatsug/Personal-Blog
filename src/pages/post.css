@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+    --color-my-white: #f2f2f2;
+    --color-my-gray: #a6a6a6;
+    --color-background-upper: #141414;
+}
+
+@layer base {
+  .prose h1 {
+    font-size: theme('fontSize.4xl');
+    font-weight: theme('fontWeight.bold');
+    line-height: theme('lineHeight.tight');
+    margin-top: theme('spacing.12');
+    margin-bottom: theme('spacing.4');
+  }
+  .prose h2 {
+    font-size: theme('fontSize.3xl');
+    font-weight: theme('fontWeight.bold');
+    line-height: theme('lineHeight.snug');
+    margin-top: theme('spacing.10');
+    margin-bottom: theme('spacing.3');
+  }
+  .prose h3 {
+    font-size: theme('fontSize.2xl');
+    font-weight: theme('fontWeight.bold');
+    line-height: theme('lineHeight.snug');
+    margin-top: theme('spacing.8');
+    margin-bottom: theme('spacing.3');
+  }
+  .prose h4, h5, h6 {
+    font-size: theme('fontSize.xl');
+    font-weight: theme('fontWeight.semibold');
+    line-height: theme('lineHeight.normal');
+    margin-top: theme('spacing.6');
+    margin-bottom: theme('spacing.2');
+  }
+
+  .prose p {
+    line-height: theme('lineHeight.relaxed');
+    margin-bottom: theme('spacing.4');
+  }
+  .prose a {
+    color: theme('colors.blue.600');
+    text-decoration: underline;
+    font-weight: theme('fontWeight.medium');
+  }
+  .prose a:hover {
+    color: theme('colors.blue.800');
+  }
+  .prose ul, ol {
+    margin-bottom: theme('spacing.4');
+    padding-left: theme('spacing.5');
+  }
+  .prose ul {
+    list-style-type: disc;
+  }
+  .prose ol {
+    list-style-type: decimal;
+  }
+  .prose li > ul, li > ol {
+    margin-top: theme('spacing.2');
+  }
+  .prose blockquote {
+    margin-bottom: theme('spacing.4');
+    padding-left: theme('spacing.4');
+    border-left-width: theme('borderWidth.2');
+    border-color: theme('colors.my-gray');
+    color: theme('colors.my-gray');
+    font-style: italic;
+  }
+
+  .prose hr {
+    border-color: theme('colors.gray.200');
+    margin-top: theme('spacing.8');
+    margin-bottom: theme('spacing.8');
+  }
+
+  .prose strong {
+    font-weight: theme('fontWeight.bold');
+  }
+  
+  .prose img {
+
+    max-width: 100%;
+
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: theme('spacing.8');
+    margin-bottom: theme('spacing.8');
+    border-radius: theme('borderRadius.md');
+
+  }
+
+  .prose code {
+    background-color: theme('colors.background-upper');
+    border-radius: theme('borderRadius.md');
+    padding: theme('spacing.1') theme('spacing.2');
+    font-family: theme('fontFamily.mono');
+    font-size: theme('fontSize.sm');
+    color: theme('colors.pink-700');
+  }
+  
+  .prose pre {
+    background-color: theme('colors.background-upper');
+    border-radius: theme('borderRadius.md');
+    padding: theme('spacing.4');
+    margin-bottom: theme('spacing.4');
+    overflow-x: auto; 
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+}

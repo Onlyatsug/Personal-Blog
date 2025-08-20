@@ -1,0 +1,71 @@
+export const meta = {
+  title: 'Um Guia para começar',
+  date: '2025-08-20',
+  visual_date: 'Aug 20, 2025',
+  context: `Este documento serve como um *showcase* de todos os elementos **CommonMark** que estilizamos. Usado para verificar se o CSS base está aplicando a formatação visual esperada em cada componente, desde os títulos até os blocos de código.`,
+  published: true,
+  id: '001',
+}
+
+
+
+Este documento serve como um *showcase* de todos os elementos **CommonMark** que estilizamos. Usado para verificar se o CSS base está aplicando a formatação visual esperada em cada componente, desde os títulos até os blocos de código.
+
+## Texto, Links e Citações
+
+Parágrafos formam a base do conteúdo. Eles devem ter um espaçamento e altura de linha confortáveis para facilitar a leitura. Quando você precisa enfatizar algo, pode usar **negrito** ou *itálico*.
+
+Para mais informações, você pode visitar o [site oficial do criador do Markdown](https://daringfireball.net/projects/markdown/).
+
+> A beleza do Markdown está em sua simplicidade. Ele permite que você se concentre no conteúdo, não na formatação. Sua estrutura semântica é clara e fácil de aprender.
+
+Este parágrafo continua após a citação, testando o espaçamento vertical.
+
+## Trabalhando com Listas
+
+Listas são essenciais para organizar informações de forma clara e concisa.
+
+### Lista Não Ordenada
+
+* Item principal de uma lista.
+* Outro item para verificar o espaçamento.
+    * Um sub-item aninhado para testar a indentação.
+    * Outro sub-item.
+* Terceiro item principal.
+
+### Lista Ordenada
+
+1. Primeiro passo de um processo.
+2. Segundo passo, que vem na sequência.
+3. Terceiro e último passo.
+
+## Mídia e Separadores Visuais
+
+O conteúdo visual também é importante. As imagens devem ter um espaçamento adequado para não se misturarem com o texto ao redor.
+
+![Megaman](/images/001/megaman.jpg "Megaman")
+
+Quando você precisa criar uma quebra temática forte no seu conteúdo, uma linha horizontal é a ferramenta perfeita.
+
+---
+
+## Exibindo Código
+
+Para desenvolvedores, exibir código de forma legível é crucial. Você pode mencionar uma função como `document.getElementById()` no meio de uma frase.
+
+Para exemplos mais longos, use um bloco de código cercado. Ele deve ter um fundo distinto, uma fonte monoespaçada e rolagem horizontal para linhas longas.
+
+```javascript
+function calcularTotal(items) {
+  // Garante que temos um array para trabalhar.
+  if (!Array.isArray(items)) {
+    return 0;
+  }
+  
+  let total = 0;
+  for (const item of items) {
+    // Adiciona o preço do item ao total
+    total += item.price;
+  }
+  return total;
+}
