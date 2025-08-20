@@ -11,15 +11,12 @@ function Item() {
     <>
       {recentPosts.map((post) => (
         <div key={post.meta.id} className='font-medium flex mb-4 justify-between'>
-          <div className='flex gap-6'>
-            <h4 className='text-my-gray text-base font-medium'>{post.meta.visual_date}</h4>
-            <Link 
+          <h4 className='text-my-gray text-base font-medium'>{post.meta.visual_date}</h4>
+          <Link 
               to={`/blog/post/${post.meta.id}`} 
-              className='text-my-white underline'
-            >
+              className='text-my-white underline ml-4 mr-4'>
               {post.meta.title}
-            </Link>
-          </div>
+          </Link>
           <h2 className='text-my-gray text-base font-medium'>#{post.meta.id}</h2>
         </div>
       ))}
