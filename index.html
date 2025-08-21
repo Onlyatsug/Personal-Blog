@@ -8,13 +8,14 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx">
-      (function(){
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
+    <script>
+      // Redireciona para a rota que o usuário tentou acessar
+      const redirect = sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
         history.replaceState(null, null, redirect);
-      }})();
+        delete sessionStorage.redirect;
+      }
     </script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

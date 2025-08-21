@@ -5,7 +5,7 @@ import { posts } from '../posts/loader';
 function Card() {
   const recentPosts = posts
     .filter(post => post.meta.published) 
-    .slice(0, 4);
+    .slice(0, 3);
 
 
   return (
