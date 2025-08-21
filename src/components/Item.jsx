@@ -4,8 +4,7 @@ import { posts } from '../posts/loader'
 
 function Item() {
   const recentPosts = posts
-    .filter(post => post.meta.published)  
-    .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
+    .filter(post => post.meta.published) 
 
   return (
     <>
@@ -13,7 +12,7 @@ function Item() {
         <div key={post.meta.id} className='font-medium flex mb-4 justify-between'>
           <h4 className='text-my-gray text-base font-medium'>{post.meta.visual_date}</h4>
           <Link 
-              to={`/blog/post/${post.meta.id}`} 
+              to={`/blog/post/${post.meta.slug}`} 
               className='text-my-white underline ml-4 mr-4'>
               {post.meta.title}
           </Link>

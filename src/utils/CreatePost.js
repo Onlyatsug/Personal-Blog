@@ -6,7 +6,15 @@ const postsDir = path.join(process.cwd(), 'src/posts');
 function getNextId() {
   const files = fs.readdirSync(postsDir);
   const ids = files
-    .map(file => parseInt(file.replace('.mdx', ''), 10))
+    .map(file => {
+      try {
+        const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
+        const match = content.match(/id:\s*'(\d+)'/);
+        return match ? parseInt(match[1], 10) : null;
+      } catch {
+        return null;
+      }
+    })
     .filter(Boolean);
   const maxId = Math.max(0, ...ids);
   return String(maxId + 1).padStart(3, '0');
@@ -32,8 +40,8 @@ const template = `export const meta = {
 Conteúdo inicial do post...
 `;
 
-const filename = path.join(postsDir, `${id}.mdx`);
+const filename = path.join(postsDir, `blank.mdx`);
 
 fs.writeFileSync(filename, template);
 
-console.log(`Post criado: ${filename}`);
+console.log(`Post criado com ID ${id}: ${filename}`);

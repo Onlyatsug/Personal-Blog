@@ -10,8 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog/>} />
-        <Route path="/blog/post/:id" element={<Post/>} />
-        <Route path="*" element={<div className='h-screen pt-6'><p className='text-center'>você não deveria estar aqui!</p></div>} />
+        <Route path="/blog/post/:slug" element={<Post/>} />
       </Routes>
     </BrowserRouter>
   );

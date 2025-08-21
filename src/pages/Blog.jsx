@@ -7,8 +7,8 @@ import '../index.css'
 function Blog() {
   return (
     <>
-      <div className='h-screen bg-background font-josefin'>
-      <div className='max-h-fit max-w-3xl flex-grow'>
+    <div className='h-screen bg-background font-josefin'>
+      <div className='max-h-fit max-w-3xl flex-col m-auto'>
         <Header local="blog" />
         <main className='pl-8 pr-8 mb-24 mt-16 flex flex-col'>
           <div className='flex items-center justify-between'>

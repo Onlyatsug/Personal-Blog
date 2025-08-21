@@ -6,8 +6,8 @@ import '../index.css'
 import './post.css'
 
 function Post() {
-  const { id } = useParams()
-  const post = posts.find(p => p.meta.id === id)
+  const { slug } = useParams() 
+  const post = posts.find(p => p.meta.slug === slug) 
 
   if (!post) {
     return <div className="text-my-white p-8">Post não encontrado.</div>
