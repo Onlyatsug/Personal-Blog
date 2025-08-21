@@ -15,7 +15,7 @@ import PsxImg from '../assets/img/psx.png'
 function Home() {
   return (
     <>
-    <div className='h-screen bg-background'>
+    <div className='flex flex-col min-h-screen bg-background'>
       <div className='max-h-fit m-auto max-w-3xl font-josefin flex-grow'>
         <Header local={"home"}></Header>
         <main className='pl-8 pr-8 mb-8 flex flex-col'>
