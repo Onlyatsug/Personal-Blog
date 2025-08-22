@@ -89,7 +89,7 @@
     margin: auto;
     margin-top: theme('spacing.8');
     margin-bottom: theme('spacing.8');
-    border-radius: theme('borderRadius.md');
+    border-radius: theme('borderRadius.sm');
 
   }
 
@@ -104,6 +104,7 @@
   
   .prose pre {
     background-color: theme('colors.background-upper');
+    
     border-radius: theme('borderRadius.md');
     padding: theme('spacing.4');
     margin-bottom: theme('spacing.4');

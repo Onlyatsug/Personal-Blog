@@ -23,11 +23,13 @@ function Post() {
   const PostContent = post.Component
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-background">
-        <div className="flex-grow max-w-3xl m-auto w-full font-josefin">
+      <div className="min-h-screen flex flex-col bg-black-b text-white-text">
+        <div className='fixed top-0 left-0 bg-black-b right-0 m-auto w-full max-w-3xl px-6'>
           <Header />
-          <div className="p-8 text-my-white">
-            <h4 className="text-my-gray mb-4">{post.meta.visual_date}</h4>
+        </div>
+        <div className="flex-grow max-w-3xl m-auto w-full px-6 mt-20">
+          <div className="text-white-text font-lora">
+            <h4 className="text-gray-text mb-4">{post.meta.visual_date}</h4>
             <h1 className="text-4xl/10 font-bold mb-8">{post.meta.title}</h1>
             <article className="prose">
               <PostContent />

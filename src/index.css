@@ -1,12 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+    font-family: Satoshi;
+    src: url("./assets/fonts/Satoshi/Satoshi-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lora;
+    src: url("./assets/fonts/Lora/Lora-Regular.ttf");
+}
 
 @import "tailwindcss";
 
 @theme {
-    --color-background: #0d0d0d;
+    --color-black-b: #101010;
+    --color-gray-b: #191818;
     --color-background-upper: #141414;
-    --color-my-white: #f2f2f2;
-    --color-my-gray: #a6a6a6;
 
-    --font-josefin: 'Josefin Sans', sans-serif;
+    --color-white-text: #f2f2f2;
+    --color-gray-text: #a6a6a6;
+
+    --font-satoshi: Satoshi, sans-serif;
+    --font-lora: Lora, serif;
 }
+
