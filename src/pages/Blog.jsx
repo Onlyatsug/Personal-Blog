@@ -7,14 +7,14 @@ import '../index.css'
 function Blog() {
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-black-b font-satoshi text-white-text">
-        <div className='fixed top-0 left-0 bg-black-b right-0 m-auto w-full max-w-3xl px-6'>
+      <div className="min-h-screen flex flex-col bg-white-b-l dark:bg-black-b font-satoshi text-white-text">
+        <div className='fixed top-0 left-0 bg-white-b dark:bg-black-b right-0 m-auto w-full max-w-3xl px-6'>
           <Header local="blog" />
         </div>
         <div className="max-w-3xl flex-grow flex-col m-auto w-full px-6 mt-20">
           <main className="mb-24 mt-16 flex flex-col">
             <div className="flex items-center justify-between">
-              <h1 className="text-5xl font-black">Blog</h1>
+              <h1 className="text-5xl font-black text-black-text dark:text-white-text">Blog</h1>
             </div>
           </main>
           <section>

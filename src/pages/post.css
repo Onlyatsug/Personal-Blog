@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-    --color-my-white: #f2f2f2;
-    --color-my-gray: #a6a6a6;
-    --color-background-upper: #141414;
+    --color-white-b-l: #e7e8e8;
+    --color-gray-b-l: #f2f2f2;
+
+    --color-black-text: #101010;
+    --color-gray-text-l: #616262;
+    
+    
+    --font-satoshi: Satoshi, sans-serif;
+    --font-lora: Lora, serif;
+    
+    --color-black-b: #101010;
+    --color-gray-b: #191818;
+
+    --color-white-text: #f2f2f2;
+    --color-gray-text: #a6a6a6;
 }
 
 @layer base {
@@ -65,13 +77,13 @@
     margin-bottom: theme('spacing.4');
     padding-left: theme('spacing.4');
     border-left-width: theme('borderWidth.2');
-    border-color: theme('colors.my-gray');
-    color: theme('colors.my-gray');
+    border-color: theme('colors.gray-text-l');
+    color: theme('colors.gray-text-l');
     font-style: italic;
   }
 
   .prose hr {
-    border-color: theme('colors.gray.200');
+    border-color: theme('colors.gray.500');
     margin-top: theme('spacing.8');
     margin-bottom: theme('spacing.8');
   }
@@ -94,18 +106,17 @@
   }
 
   .prose code {
-    background-color: theme('colors.background-upper');
-    border-radius: theme('borderRadius.md');
+    background-color: #191818;
+    border-radius: theme('borderRadius.sm');
     padding: theme('spacing.1') theme('spacing.2');
     font-family: theme('fontFamily.mono');
     font-size: theme('fontSize.sm');
-    color: theme('colors.pink-700');
+    color: theme('colors.white-text');
   }
   
   .prose pre {
-    background-color: theme('colors.background-upper');
-    
-    border-radius: theme('borderRadius.md');
+    background-color: #191818;
+    border-radius: theme('borderRadius.sm');
     padding: theme('spacing.4');
     margin-bottom: theme('spacing.4');
     overflow-x: auto; 
