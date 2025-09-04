@@ -23,8 +23,8 @@ function Post() {
   const PostContent = post.Component
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-white-b-l dark:bg-black-b text-white-text">
-        <div className='fixed top-0 left-0 bg-white-b-l dark:bg-black-b right-0 m-auto w-full max-w-3xl px-6'>
+      <div className="min-h-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 text-white-text">
+        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl px-6'>
           <Header />
         </div>
         <div className="flex-grow max-w-3xl m-auto w-full px-6 mt-20">

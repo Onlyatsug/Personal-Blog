@@ -49,6 +49,7 @@
   }
 
   .prose p {
+    font-size: theme('fontSize.xl');
     line-height: theme('lineHeight.relaxed');
     margin-bottom: theme('spacing.4');
   }

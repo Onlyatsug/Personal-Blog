@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# nao prontos
+src/posts/finanças-pessoais-sobreviva.mdx

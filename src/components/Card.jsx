@@ -11,9 +11,9 @@ function Card() {
   return (
     <>
       {recentPosts.map((post, index) => (
-        <Link to={`/blog/post/${post.meta.slug}`}  key={index} className='flex flex-col bg-gray-b-l dark:bg-gray-b rounded-sm p-3 pt-2 mb-4'>
+        <Link to={`/blog/post/${post.meta.slug}`}  key={index} className='flex flex-col bg-zinc-50 border dark:bg-gray-b rounded-sm px-4 py-4 mb-4'>
           <div className='flex justify-between mb-2 font-black'>
-            <h3 className='text-black-text dark:text-white-text'>{post.meta.title}</h3>
+            <h3 className='text-black-text dark:text-white-text text-lg'>{post.meta.title}</h3>
             <span className='text-gray-text-l dark:text-gray-text font-medium'>{post.meta.visual_date}</span>
           </div>
           <div className='text-gray-text-l dark:text-gray-text line-clamp-2 font-medium'>
