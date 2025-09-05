@@ -17,7 +17,7 @@ function Home() {
           <img src={PsxImg} alt="colorful polygon" className='w-24' />
         </div>
         
-        <p className='text-gray-text-l dark:text-gray-text mt-3 mb-4 text-xl font-medium'>
+        <p className='text-gray-text-l dark:text-gray-text mt-3 mb-4 text-lg font-medium'>
           Bem-vindo(a) ao meu blog, aqui <br/>você encontra 
           artigos sobre tecnologia <br/>e notas de estudos.
         </p>

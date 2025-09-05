@@ -4,7 +4,7 @@ import Item from '../components/Item'
 
 import '../index.css'
 
-function Blog() {
+function Posts() {
   return (
     <>
       <div className="min-h-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-white-text">
@@ -14,7 +14,7 @@ function Blog() {
         <div className="max-w-3xl flex-grow flex-col m-auto w-full px-6 mt-20">
           <main className="mb-24 mt-16 flex flex-col">
             <div className="flex items-center justify-between">
-              <h1 className="text-5xl font-black text-black-text dark:text-white-text">Blog</h1>
+              <h1 className="text-5xl font-black text-black-text dark:text-white-text">Posts</h1>
             </div>
           </main>
           <section>
@@ -27,4 +27,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default Posts
