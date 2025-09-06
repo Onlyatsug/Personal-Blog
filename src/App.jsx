@@ -7,7 +7,7 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts/>} />
         <Route path="/posts/:slug" element={<Post/>} />

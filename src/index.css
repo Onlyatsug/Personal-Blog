@@ -5,28 +5,23 @@
 }
 
 @font-face {
-    font-family: Lora;
-    src: url("./assets/fonts/Lora/Lora-Regular.woff2");
+    font-family: Charter;
+    src: url("./assets/fonts/Charter/charter_regular-webfont.woff");
     font-display: swap;
 }
+
+@font-face {
+    font-family: Neue;
+    src: url("./assets/fonts/Neue/NeueHaasUnica-Regular.woff2");
+    font-display: swap;
+}
+
 
 @import "tailwindcss";
 
 @theme {
-    --color-white-b-l: #e7e8e8;
-    --color-gray-b-l: #f2f2f2;
-
-    --color-black-text: #101010;
-    --color-gray-text-l: #616262;
-    
-    
     --font-satoshi: Satoshi, sans-serif;
-    --font-lora: Lora, serif;
-    
-    --color-black-b: #101010;
-    --color-gray-b: #191818;
-
-    --color-white-text: #f2f2f2;
-    --color-gray-text: #a6a6a6;
+    --font-charter: Charter, serif;
+    --font-neue: Neue, sans-serif;
 }
 

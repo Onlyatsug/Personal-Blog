@@ -7,7 +7,7 @@ import PsxImg from '../assets/img/psx.png'
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-black-text dark:text-white-text">
+    <div className="min-h-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-zinc-950 dark:text-zinc-50">
       <div className='max-w-3xl m-auto flex flex-col min-h-screen px-6'>
       <Header local={"home"} />
       
@@ -17,9 +17,9 @@ function Home() {
           <img src={PsxImg} alt="colorful polygon" className='w-24' />
         </div>
         
-        <p className='text-gray-text-l dark:text-gray-text mt-3 mb-4 text-lg font-medium'>
-          Bem-vindo(a) ao meu blog, aqui <br/>você encontra 
-          artigos sobre tecnologia <br/>e notas de estudos.
+        <p className='text-zinc-600 dark:text-zinc-400 mt-3 mb-4 text-lg'>
+          Bem-vindo(a) ao meu blog, aqui você<br/> encontra 
+          artigos sobre tecnologia e notas de estudos.
         </p>
         
         <div className='flex gap-4'>
@@ -42,7 +42,7 @@ function Home() {
       </main>
 
       <section className='flex flex-col'>
-        <h2 className='text-2xl font-black mb-2'>Last Articles</h2>
+        <h2 className='text-xl font-black mb-2'>Last Articles</h2>
         <Card/>
       </section>
 
