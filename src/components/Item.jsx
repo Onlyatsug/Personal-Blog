@@ -10,7 +10,7 @@ function Item() {
     <>
       {recentPosts.map((post) => (
         <div key={post.meta.id} className='font-black flex mb-4 text-lg items-center'>
-          <h4 className='text-zinc-600 dark:text-zinc-400 text-nowrap '>{post.meta.visual_date}</h4>
+          <h4 className='text-zinc-600 dark:text-zinc-400 text-nowrap'>{post.meta.visual_date}</h4>
           <Link 
               to={`/posts/${post.meta.slug}`} 
               className='underline ml-4 text-zinc-950 dark:text-zinc-50'>
