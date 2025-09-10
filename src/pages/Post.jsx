@@ -24,7 +24,7 @@ function Post() {
   return (
     <>
       <div className="min-h-screen flex flex-col bg-zinc-100 antialiased">
-        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl bg-zinc-100  border-b'>
+        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl bg-zinc-100 '>
           <div className='mx-6 text-zinc-950'>
             <Header />
           </div>
@@ -32,7 +32,7 @@ function Post() {
         <div className="flex-grow max-w-3xl m-auto w-full px-6 mt-26 pt-6 bg-zinc-100 rounded-sm">
           <div>
             <span className='h-px w-full bg-zinc-400 flex mb-4'></span>
-            <header className='flex justify-between'>
+            <header className='flex justify-between items-center'>
               <ul className='flex gap-3 '>
                 <li className='bg-zinc-200 py-1 px-2 rounded-md text-zinc-600'>?</li>
                 <li className='bg-zinc-200 py-1 px-2 rounded-md text-zinc-600'>?</li>
