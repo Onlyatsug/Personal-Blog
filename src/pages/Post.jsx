@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Tags from '../components/Tags'
 import { posts } from '../posts/loader'
 import '../index.css'
 import './post.css'
@@ -33,11 +34,7 @@ function Post() {
           <div>
             <span className='h-px w-full bg-zinc-400 flex mb-4'></span>
             <header className='flex justify-between items-center'>
-              <ul className='flex gap-3 '>
-                <li className='bg-zinc-200 py-1 px-2 rounded-md text-zinc-600'>?</li>
-                <li className='bg-zinc-200 py-1 px-2 rounded-md text-zinc-600'>?</li>
-                <li className='bg-zinc-200 py-1 px-2 rounded-md text-zinc-600'>?</li>
-              </ul>
+              <Tags tags={post.meta.tags}/>
               <p>Published: {post.meta.visual_date}</p>
             </header>
             <span className='h-px w-full bg-zinc-400 flex mt-4'></span>
