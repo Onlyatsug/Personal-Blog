@@ -32,6 +32,7 @@ const template = `export const meta = {
   visual_date: '${visual_date}',
   context: \`Escreva aqui o conteúdo do seu post\`,
   published: false,
+  tags: ['exemplo', 'exemplo2'],
   id: '${id}',
 }
 
