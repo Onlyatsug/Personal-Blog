@@ -4,13 +4,22 @@ export const meta = {
   visual_date: 'Aug 20, 2025',
   context: `Este documento serve como um showcase de todos os elementos CommonMark que estilizamos. Usado para verificar se o CSS base está aplicando a formatação visual esperada em cada componente, desde os títulos até os blocos de código.`,
   published: true,
-  tags: ['Guia'],
+  tags: ['Guia', 'teste', 'teste 2'],
   id: '001',
 }
 
+import Tags from '../components/Tags.jsx'
+import Figure from '../components/Figure.jsx'
 
+<Tags tags={meta.tags}/>
 
-Este documento serve como um *showcase* de todos os elementos **CommonMark** que estilizamos. Usado para verificar se o CSS base está aplicando a formatação visual esperada em cada componente, desde os títulos até os blocos de código.
+{meta.context}
+
+<Figure 
+  src="/images/001/banner.png" 
+  alt="Banner" 
+  caption="print do firefox" 
+/>
 
 ## Texto, Links e Citações
 
@@ -44,8 +53,11 @@ Listas são essenciais para organizar informações de forma clara e concisa.
 
 O conteúdo visual também é importante. As imagens devem ter um espaçamento adequado para não se misturarem com o texto ao redor.
 
-![Megaman](/images/001/megaman.jpg "Megaman")
-
+<Figure 
+  src="/images/001/megaman.jpg" 
+  alt="Megaman" 
+  caption="meu mano megaman" 
+/>
 Quando você precisa criar uma quebra temática forte no seu conteúdo, uma linha horizontal é a ferramenta perfeita.
 
 ---

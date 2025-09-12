@@ -36,13 +36,21 @@ const template = `export const meta = {
   id: '${id}',
 }
 
-# Novo post
+import Tags from '../components/Tags.jsx'
+import Figure from '../components/Figure.jsx'
 
-Conteúdo inicial do post...
+<Tags tags={meta.tags} />
+
+{meta.context}
+
+<Figure 
+  src="/images/001/banner.png" 
+  alt="Banner" 
+  caption="print do firefox" 
+/>
 `;
 
-const filename = path.join(postsDir, `blank.mdx`);
-
+const filename = path.join(postsDir, `post-${id}.mdx`);
 fs.writeFileSync(filename, template);
 
 console.log(`Post criado com ID ${id}: ${filename}`);
