@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Tags from '../components/Tags'
 import { posts } from '../posts/loader'
 import '../index.css'
 import './post.css'

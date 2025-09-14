@@ -9,13 +9,7 @@
 
 
 @layer base {
-  .prose img + p {
-    text-align: center;
-    color: #71717a; /* equivalente ao text-zinc-500 */
-    font-size: 0.85rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-  }
+
   .prose h1 {
     font-family: theme('fontFamily.neue');
     font-size: theme('fontSize.4xl');
@@ -59,8 +53,8 @@
     margin-bottom: theme('spacing.4');
     padding-left: theme('spacing.5');
   }
-  .prose ul { list-style-type: none; }
-  .prose ol { list-style-type: none; }
+  .prose ul { list-style: inside; font-family: theme('fontFamily.charter');}
+  .prose ol { list-style-type:decimal; font-family: theme('fontFamily.charter');}
   .prose li>ul,.prose li>ol { margin-top: theme('spacing.2');}
   .prose blockquote {
     margin-bottom: theme('spacing.4');
@@ -72,6 +66,8 @@
   }
   .prose hr {
     border-color: theme('colors.gray.500');
+    border-radius: 4px;
+    background: #464646;
     margin: theme('spacing.8') 0;
   }
   .prose strong { font-weight: theme('fontWeight.bold'); }
