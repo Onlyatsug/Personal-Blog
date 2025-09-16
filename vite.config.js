@@ -10,8 +10,8 @@ const prettyCodeOptions = {
 }
 
 // https://vite.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/Personal-Blog/' : '/',
+export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -20,4 +20,4 @@ export default defineConfig(({ mode }) => ({
       rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
     }),
   ],
-}))
+})
