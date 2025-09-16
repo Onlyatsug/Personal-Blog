@@ -11,7 +11,7 @@ const prettyCodeOptions = {
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/onlyatsug/' : '/',
+  base: mode === 'production' ? '/Personal-Blog/' : '/',
   plugins: [
     react(),
     tailwindcss(),
