@@ -10,11 +10,14 @@ const prettyCodeOptions = {
 }
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss(), mdx({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/onlyatsug/' : '/',
+  plugins: [
+    react(),
+    tailwindcss(),
+    mdx({
       remarkPlugins: [remarkGfm],
-      rehypePlugins: [
-        [rehypePrettyCode, prettyCodeOptions]
-      ],
-    })],
-})
+      rehypePlugins: [[rehypePrettyCode, prettyCodeOptions]],
+    }),
+  ],
+}))

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
 import Post from './pages/Post';
+import NotFound from './pages/NotFound'
 import './index.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts/>} />
         <Route path="/posts/:slug" element={<Post/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
