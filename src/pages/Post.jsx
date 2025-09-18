@@ -20,13 +20,13 @@ function Post() {
   const PostContent = post.Component
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-zinc-100 antialiased">
-        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl bg-zinc-100 '>
+      <div className="min-h-screen flex flex-col bg-zinc-50 antialiased">
+        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl bg-zinc-50 '>
           <div className='mx-4 text-zinc-950'>
             <Header />
           </div>
         </div>
-        <div className="flex-grow max-w-3xl m-auto w-full px-4 mt-6 pt-6 bg-zinc-100">
+        <div className="flex-grow max-w-3xl m-auto w-full px-4 mt-6 pt-6">
           <div>
             <h1 className="text-4xl/10 font-bold mb-8 font-neue mt-14">{post.meta.title}</h1>
             <article className="prose ">
