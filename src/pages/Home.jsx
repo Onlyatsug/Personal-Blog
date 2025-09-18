@@ -12,9 +12,9 @@ function Home() {
       <Header local={"home"} />
       
       <main className='flex flex-col flex-grow py-6'>
-        <div className='flex items-start  justify-between gap-4'>
-          <h1 className='text-5xl font-black'>Gustavo <br /> Santana</h1>
-          <img src={PsxImg} alt="colorful polygon" className='w-24' />
+        <div className='flex items-start justify-between gap-4'>
+          <h1 className='text-5xl font-black'>Gustavo Santana</h1>
+          <img src={PsxImg} alt="colorful polygon" className='w-24 sm:w-12' />
         </div>
         
         <p className='text-zinc-600 dark:text-zinc-400 mt-3 mb-4 text-lg'>

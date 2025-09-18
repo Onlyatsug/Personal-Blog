@@ -29,11 +29,11 @@ function Posts() {
           <Header local="posts" />
         </div>
         <div className="max-w-3xl flex-grow flex-col m-auto w-full px-6 mt-16">
-          <main className="mb-12 py-6 flex flex-col">
+          <main className="mb-8 py-6 flex flex-col">
             <div className="flex items-center justify-between">
               <h1 className="text-5xl font-black text-zinc-950 dark:text-zinc-50">Posts</h1>
             </div>
-            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="underline mb-4 mt-8">
+            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="text-lg text-zinc-400 underline mb-4 mt-3">
               {showTags ? "Ocultar tags" : "Exibir tags"}
             </a>
 
@@ -56,7 +56,7 @@ function Posts() {
                 {currentTag && (
                   <button
                     onClick={() => setSearchParams({})}
-                    className="text-sm text-center underline text-zinc-950 dark:text-zinc-50"
+                    className="text-lg text-center underline dark:text-zinc-400"
                   >
                     Exibir todas
                   </button>
