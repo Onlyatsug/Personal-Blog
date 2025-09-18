@@ -28,8 +28,8 @@ function Posts() {
         <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl px-4 text-zinc-950 dark:text-zinc-50'>
           <Header local="posts" />
         </div>
-        <div className="max-w-3xl flex-grow flex-col m-auto w-full px-6 mt-20">
-          <main className="mb-12 mt-8 flex flex-col">
+        <div className="max-w-3xl flex-grow flex-col m-auto w-full px-6 mt-16">
+          <main className="mb-12 py-6 flex flex-col">
             <div className="flex items-center justify-between">
               <h1 className="text-5xl font-black text-zinc-950 dark:text-zinc-50">Posts</h1>
             </div>
