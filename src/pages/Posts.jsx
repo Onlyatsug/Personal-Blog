@@ -33,7 +33,7 @@ function Posts() {
             <div className="flex items-center justify-between">
               <h1 className="text-5xl font-black text-zinc-950 dark:text-zinc-50">Posts</h1>
             </div>
-            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="text-lg text-zinc-400 underline mb-4 mt-3">
+            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="text-md text-zinc-400 underline mb-4 mt-3">
               {showTags ? "Ocultar tags" : "Exibir tags"}
             </a>
 
@@ -43,7 +43,7 @@ function Posts() {
                   <Link
                     key={index}
                     to={`?tag=${tag}`}
-                    className={`px-3 py-1 rounded-sm text-zinc-50 border border-zinc-50 ${
+                    className={`px-2 py-1 rounded-sm text-zinc-50 border border-zinc-50 ${
                       tag === currentTag
                         ? "bg-zinc-50 text-zinc-950"
                         : ""
@@ -56,9 +56,9 @@ function Posts() {
                 {currentTag && (
                   <button
                     onClick={() => setSearchParams({})}
-                    className="text-lg text-center underline dark:text-zinc-400"
+                    className="text-md text-center underline dark:text-zinc-400"
                   >
-                    Exibir todas
+                    Limpar
                   </button>
                 )}
               </div>
