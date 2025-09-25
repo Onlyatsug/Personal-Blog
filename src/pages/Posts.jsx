@@ -1,10 +1,10 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Tags from '../components/Tags'
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
+import Tags from '../components/ui/Tags'
 
 import { useState } from "react";
 import { Link, useSearchParams } from 'react-router-dom'
-import { posts } from '../posts/loader'
+import { posts } from '../tools/LoaderPost'
 
 import '../index.css'
 
@@ -70,7 +70,7 @@ function Posts() {
               <div key={post.meta.id} className='font-black flex mb-4 text-lg items-center'>
                 <h4 className='text-zinc-600 dark:text-zinc-400 text-nowrap'>{post.meta.visual_date}</h4>
                 <Link 
-                  to={`/posts/${post.meta.slug}`} 
+                  to={`/posts/${post.meta.slug.split("/").pop()}`} 
                   className='underline ml-4 text-zinc-950 dark:text-zinc-50'>
                   {post.meta.title}
                 </Link>

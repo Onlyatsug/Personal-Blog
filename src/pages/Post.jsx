@@ -1,17 +1,19 @@
 import { useParams } from 'react-router-dom'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import NotFound from './NotFound'
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
+import NotFound from '../pages/NotFound'
 
-import { posts } from '../posts/loader'
+import { posts } from '../tools/LoaderPost'
 import '../index.css'
-import './post.css'
+import './Posts'
 
 function Post() {
   const { slug } = useParams() 
-  const post = posts.find(p => p.meta.slug === slug) 
+
+  const post = posts.find(p => p.meta.slug.split("/").pop() === slug) 
 
   if (!post) {
+    console.log("sem post");
     return (
       <NotFound/>
     )

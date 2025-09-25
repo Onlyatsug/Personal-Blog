@@ -1,6 +1,6 @@
-import Card from '../components/Card'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Card from '../components/ui/Card'
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
 
 import '../index.css'
 import PsxImg from '../assets/img/psx.png'

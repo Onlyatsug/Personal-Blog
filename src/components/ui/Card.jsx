@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import '../index.css'
-import { posts } from '../posts/loader';
+import '../../index.css'
+import { posts } from '../../tools/LoaderPost';
 
 function Card() {
   const recentPosts = posts
@@ -11,7 +11,7 @@ function Card() {
   return (
     <>
       {recentPosts.map((post, index) => (
-        <Link to={`/posts/${post.meta.slug}`}  key={index} className='flex flex-col bg-zinc-50 border dark:bg-zinc-900 rounded-sm px-4 py-4 mb-4'>
+        <Link to={`${"posts/" + post.meta.slug.split("/").pop()}`}  key={index} className='flex flex-col bg-zinc-50 border dark:bg-zinc-900 rounded-sm px-4 py-4 mb-4'>
           <div className='flex justify-between mb-2 font-black'>
             <h3 className='text-lg/5 line-clamp-1 '>{post.meta.title}</h3>
           </div>
