@@ -5,6 +5,7 @@ import NotFound from '../pages/NotFound'
 
 import { posts } from '../tools/LoaderPost'
 import '../index.css'
+import '../posts/post.css'
 import './Posts'
 
 function Post() {
