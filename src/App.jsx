@@ -11,13 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-
-        {/* rota pai */}
-        <Route path="/posts" element={<Posts />}>
-          {/* rota filha relativa */}
-        </Route>
-          <Route path="/posts/:slug" element={<Post />} />
-
+        <Route path="/posts" element={<Posts />}/>
+        <Route path="/posts/:slug" element={<Post />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
