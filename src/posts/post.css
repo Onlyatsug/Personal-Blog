@@ -40,16 +40,16 @@
   }
   .prose p {
     font-family: theme('fontFamily.charter');
-    font-size: theme('fontSize.lg');
+    font-size: theme('fontSize.xl');
     line-height: theme('lineHeight.relaxed');
     margin-bottom: theme('spacing.4');
   }
   .prose a {
-    color: theme('colors.blue.800');
-    font-weight: theme('fontWeight.medium');
+    color: theme('colors.blue.500');
   }
-  .prose a:hover { color: theme('colors.blue.800'); text-decoration: underline; }
+  .prose a:hover { color: theme('colors.blue.300'); text-decoration: underline; }
   .prose ul,.prose ol {
+    font-size: theme('fontSize.xl');
     margin-bottom: theme('spacing.4');
     padding-left: theme('spacing.5');
   }
@@ -60,12 +60,12 @@
     margin-bottom: theme('spacing.4');
     border-left-width: theme('borderWidth.2');
     padding-left: theme('spacing.4');
-    border-color: theme('colors.zinc.600');
-    color: theme('colors.zinc.600');
+    border-color: theme('colors.zinc.500');
+    color: theme('colors.zinc.500');
     font-style: italic;
   }
   .prose hr {
-    border-color: theme('colors.gray.500');
+    border-color: theme('colors.zinc.100');
     border-radius: 4px;
     background: #464646;
     margin: theme('spacing.8') 0;

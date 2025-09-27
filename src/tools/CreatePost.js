@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const postsDir = path.join(process.cwd(), 'src/posts');
+const imagesDir = path.join(process.cwd(), 'public/images');
 
 function getNextId() {
   const files = fs.readdirSync(postsDir);
@@ -36,15 +37,15 @@ const template = `export const meta = {
   id: '${id}',
 }
 
-import Tags from '../components/Tags.jsx'
-import Figure from '../components/Figure.jsx'
+import Tags from '../components/ui/Tags.jsx'
+import Figure from '../components/ui/Figure.jsx'
 
 <Tags tags={meta.tags} />
 
-{meta.context}
+<p>{meta.context}</p>
 
 <Figure 
-  src="/images/001/banner.png" 
+  src="/images/${id}/banner.png" 
   alt="Banner" 
   caption="print do firefox" 
 />
@@ -53,4 +54,14 @@ import Figure from '../components/Figure.jsx'
 const filename = path.join(postsDir, `post-${id}.mdx`);
 fs.writeFileSync(filename, template);
 
+const postImageDir = path.join(imagesDir, id);
+if (!fs.existsSync(postImageDir)) {
+  fs.mkdirSync(postImageDir, { recursive: true });
+}
+const bannerPath = path.join(postImageDir, 'banner.png');
+if (!fs.existsSync(bannerPath)) {
+  fs.writeFileSync(bannerPath, '');
+}
+
 console.log(`Post criado com ID ${id}: ${filename}`);
+console.log(`Diretório de imagens criado em: ${postImageDir}`);

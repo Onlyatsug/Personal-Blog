@@ -29,7 +29,7 @@ function Posts() {
           <Header local="posts" />
         </div>
         <div className="max-w-3xl flex-grow flex-col m-auto w-full px-4 mt-16">
-          <main className="mb-2 py-6 flex flex-col">
+          <main className="py-6 flex flex-col">
             <div className="flex items-center justify-between">
               <h1 className="text-5xl font-black text-zinc-950 dark:text-zinc-50">Posts</h1>
             </div>
@@ -38,15 +38,15 @@ function Posts() {
             </a>
 
             {showTags && (
-              <div className="mt-2 flex flex-wrap gap-4 list-none">
+              <div className="mt-3 flex flex-wrap gap-4 list-none">
                 {uniqueTags.map((tag, index) => (
                   <Link
                     key={index}
                     to={`?tag=${tag}`}
-                    className={`px-2 py-1 rounded-sm bg-zinc-900 text-zinc-50 border border-zinc-50 ${
+                    className={`px-2 py-1 rounded-sm border border-zinc-50 ${
                       tag === currentTag
-                        ? "bg-zinc-50 text-zinc-960"
-                        : ""
+                        ? "bg-zinc-50 text-zinc-900"
+                        : "bg-zinc-900 text-zinc-50"
                     }`}
                   >
                     {tag}
@@ -68,7 +68,7 @@ function Posts() {
           <section>
             {filteredPosts.map((post) => (
               <div key={post.meta.id} className='font-black flex mb-4 text-lg items-center'>
-                <h4 className='text-zinc-600 dark:text-zinc-500 text-nowrap'>{post.meta.visual_date}</h4>
+                <h4 className='text-zinc-600 dark:text-zinc-400 text-nowrap'>{post.meta.visual_date}</h4>
                 <Link 
                   to={`/posts/${post.meta.slug.split("/").pop()}`} 
                   className='underline ml-4 text-zinc-950 dark:text-zinc-50'>

@@ -31,7 +31,7 @@ function Post() {
         </div>
         <div className="flex-grow max-w-3xl m-auto w-full px-4 mt-6 pt-6">
           <div>
-            <h1 className="text-4xl/10 font-bold mb-8 font-neue mt-14">{post.meta.title}</h1>
+            <h1 className="text-4xl/10 font-bold mb-6 font-neue mt-14">{post.meta.title}</h1>
             <article className="prose ">
               <PostContent />
             </article>

@@ -9,7 +9,7 @@ export default function Figure({ src, alt, caption}) {
         style={{marginBottom: 0, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} 
       />
       {caption && (
-        <figcaption className="text-zinc-500 text-sm mt-1 mb-5 italic font-charter">
+        <figcaption className="text-zinc-500 text-base mt-1 mb-5 italic font-charter">
           {caption}
         </figcaption>
       )}
