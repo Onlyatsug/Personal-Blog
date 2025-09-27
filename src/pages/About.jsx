@@ -28,8 +28,8 @@ function About() {
           <h1 className='text-3xl font-black'>Recomendações</h1>
         </div>
         <div className='text-2xl  justify-center'>
-          <h3 className='mb-2'>Leitura</h3>
-          <div className='flex items-center gap-6'>
+          <h3 className='mb-6'>Leitura</h3>
+          <div className='flex flex-col items-center gap-6 sm:flex-row'>
             <a href="https://www.amazon.com.br/Lord-Mysteries-Vol-Clown-Part/dp/B0DQKLC79Z">
               <img src="https://m.media-amazon.com/images/I/81BKBqWOY6L._SL1500_.jpg" alt="livro" className='h-80' />
             </a>

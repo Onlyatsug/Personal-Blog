@@ -8,7 +8,7 @@ import PsxImg from '../assets/img/psx.png'
 function Home() {
   return (
     <div className="flex flex-col bg-zinc-950 font-satoshi text-zinc-50">
-      <div className='w-3xl m-auto flex flex-col min-h-screen px-4'>
+      <div className='max-w-3xl m-auto flex flex-col min-h-screen px-4'>
         <Header local={"home"} />
         <main className='flex flex-col flex-grow py-6'>
           <div className='flex justify-between'>
