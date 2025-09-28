@@ -4,14 +4,14 @@ import '../index.css'
 
 function About() {
   return (
-    <div className="min-w-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-zinc-950 dark:text-zinc-50">
+    <div className="min-w-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-zinc-900 dark:text-zinc-100">
       <div className='max-w-3xl m-auto flex flex-col min-h-screen px-4'>
       <Header local={"about"} />
       <main className='flex flex-col flex-grow py-6'>
         <div className='flex items-start  justify-between gap-4 mb-6'>
           <h1 className='text-5xl font-black'>Quem sou eu?</h1>
         </div>
-        <p className="text-zinc-600 dark:text-zinc-400 mt-3 mb-4 text-lg break">
+        <p className="text-zinc-700 dark:text-zinc-400 mt-3 mb-4 text-lg break">
           Me chamo Gustavo Santana Barboza, um jovem interessado por tecnologia — de
           engenharia reversa a sistemas modernos. Quero compartilhar conhecimento,
           ideias e registrar informações para quem também se interessar.
@@ -33,7 +33,7 @@ function About() {
             <a href="https://www.amazon.com.br/Lord-Mysteries-Vol-Clown-Part/dp/B0DQKLC79Z">
               <img src="https://m.media-amazon.com/images/I/81BKBqWOY6L._SL1500_.jpg" alt="livro" className='h-80' />
             </a>
-            <p className='text-lg text-zinc-400 w-80'>"Esta é a lenda do Tolo, uma carta de tarô numerada como zero, um número de potencial ilimitado..."</p>
+            <p className='text-lg text-center text-zinc-700 w-80'>"The lord of the mysteries"</p>
           </div>
         </div>
         <h1 className='text-3xl font-black mt-24'>Links</h1>

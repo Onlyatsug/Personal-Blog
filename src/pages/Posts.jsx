@@ -24,16 +24,16 @@ function Posts() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-zinc-950 font-satoshi text-zinc-50">
-        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl px-4 text-zinc-50'>
+      <div className="min-h-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-zinc-50">
+        <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl px-4 text-zinc-900'>
           <Header local="posts" />
         </div>
         <div className="max-w-3xl flex-grow flex-col m-auto w-full px-4 mt-16">
           <main className="py-6 flex flex-col">
             <div className="flex items-center justify-between">
-              <h1 className="text-5xl font-black text-zinc-950 dark:text-zinc-50">Posts</h1>
+              <h1 className="text-5xl font-black text-zinc-900 dark:text-zinc-50">Posts</h1>
             </div>
-            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="text-md text-zinc-400 underline mb-4 mt-3">
+            <a href="#" onClick={(e) => {e.preventDefault(); setShowTags(!showTags);}} className="text-md text-zinc-600 dark:text-zinc-400 underline mb-4 mt-3">
               {showTags ? "Ocultar tags" : "Exibir tags"}
             </a>
 
@@ -56,7 +56,7 @@ function Posts() {
                 {currentTag && (
                   <button
                     onClick={() => setSearchParams({})}
-                    className="text-md text-center underline dark:text-zinc-400"
+                    className="text-md text-center underline text-zinc-600 dark:text-zinc-400"
                   >
                     Limpar
                   </button>
@@ -71,7 +71,7 @@ function Posts() {
                 <h4 className='text-zinc-600 dark:text-zinc-400 text-nowrap'>{post.meta.visual_date}</h4>
                 <Link 
                   to={`/posts/${post.meta.slug.split("/").pop()}`} 
-                  className='underline ml-4 text-zinc-950 dark:text-zinc-50'>
+                  className='underline ml-4 text-zinc-900 dark:text-zinc-50'>
                   {post.meta.title}
                 </Link>
               </div>
