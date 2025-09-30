@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="min-w-screen flex flex-col bg-zinc-100 dark:bg-zinc-950 font-satoshi text-zinc-900 dark:text-zinc-100">
       <div className='fixed top-0 left-0 right-0 m-auto w-full max-w-3xl px-4 text-zinc-900 dark:text-zinc-50 bg-zinc-100 dark:bg-zinc-950'>
-          <Header local="posts" />
+          <Header local="about" />
       </div>
       <div className='mt-16 max-w-3xl m-auto flex flex-col min-h-screen px-4'>
       <main className='flex flex-col flex-grow py-6'>
