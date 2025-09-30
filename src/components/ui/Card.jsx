@@ -12,7 +12,7 @@ function Card() {
     <>
       {recentPosts.map((post, index) => (
         <Link to={`${"posts/" + post.meta.slug.split("/").pop()}`}  key={index} className='flex flex-col border bg-zinc-900 dark:bg-zinc-900 rounded-sm px-4 py-4 mb-4'>
-          <div className='flex justify-between mb-2 font-black text-zinc-50 dark:text-zinc-900'>
+          <div className='flex justify-between mb-2 font-black text-zinc-50'>
             <h3 className='text-lg/5 line-clamp-1 '>{post.meta.title}</h3>
             <p>{post.meta.visual_date}</p>
           </div>
