@@ -35,7 +35,7 @@ function About() {
             <a href="https://www.amazon.com.br/Lord-Mysteries-Vol-Clown-Part/dp/B0DQKLC79Z">
               <img src="https://m.media-amazon.com/images/I/81BKBqWOY6L._SL1500_.jpg" alt="livro" className='h-80' />
             </a>
-            <p className='text-lg text-center text-zinc-700 w-80'>"The lord of the mysteries"</p>
+            <p className='text-lg text-center text-zinc-700 w-80'>"Lord of Mysteries"</p>
           </div>
         </div>
         <h1 className='text-3xl font-black mt-24'>Links</h1>
